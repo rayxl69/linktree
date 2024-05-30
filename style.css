@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #180f4a;
+    --cor2: #ff2978;
+    --cor3: #ff2978;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(360deg, var(--cor1), var(--cor2));
+}
+
+.toggle {
+    position: relative;
+}
+
+#btn{
+    position: fixed;
+    top: 3vh;
+    right: 3vw;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#btn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+    transition: all .5s ease;
+}
+
+.toggle .open span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 4.5px);
+}
+
+.toggle .open span:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle .open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.toggle div #sessao {
+    width: 310px;
+    height: 250px;
+    background-color: rgb(43, 41, 41);
+    position: fixed;
+    top: 11vh;
+    right: 0;
+    margin-right: 3vw;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .5s ease;
+}
+
+.toggle div #sessao .tema {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
+
+.toggle div #sessao .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.toggle div #sessao .buttons button {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+}
+
+.toggle div #sessao .buttons button:nth-child(1) {
+    background: linear-gradient(360deg, #180F4A, #FF2978);
+}
+
+.toggle div #sessao .buttons button:nth-child(2) {
+    background: linear-gradient(90deg, #b0c4de, #2f4f4f);
+}
+
+.toggle div #sessao .buttons button:nth-child(3) {
+    background: linear-gradient(360deg, #bdc3c7, #2c3e50);
+}
+
+.toggle .open #sessao {
+    display: flex;
+}
+
+.menu {
+    padding-top: 3vh;
+    width: 100%;
+    /*background-color: gray;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu * {
+    padding: 10px;
+}
+
+.menu img {
+    padding: 0;
+    width: 210px;
+    height: 210px;
+    border: 9px solid white;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu .nome {
+    margin: 4vh 4vw;
+    font-size: 43px;
+    font-family: "Lobster", sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.menu .descricao {
+    padding: 0 5px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    white-space: normal;
+    font-family: "Poetsen One", cursive;
+    color: rgb(0, 0, 0);
+}
+
+main {
+    width: 80vw;
+    margin: 10vh auto 4vh auto;
+    padding: 12vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid black;
+    border-radius: 12px;
+}
+
+main .plata {
+    margin-bottom: 11vh;
+}
+
+main .plata h1 {
+    font-size: 50px;
+    font-family: "Lobster", cursive;
+    color: white;
+    text-align: center;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main ul li {
+    min-width: 60vw;
+    height: 80px;
+    background-color: var(--cor3);
+    margin: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main ul li a {
+    text-decoration: none;
+    width: 100%;
+}
+
+main ul li a *{
+    color: black;
+    display: block;
+    font-size: 25px;
+}
+
+main ul li a i{
+    margin-left: 13vw;
+    font-size: 28px;
+    float: left;
+}
+
+main ul li a span{
+    font-family: "Poetsen One", cursive;
+    margin-right: 13vw;
+    float: right;
+}
+
+
+@media (max-width: 480px){
+    #btn {
+        right: 5vw;
+    }
+    .toggle div #sessao {
+        width: 260px;
+        height: 160px;
+        margin-right: 5vw;
+    }
+    .menu .descricao {
+        overflow-wrap: break-word;
+    }
+    main {
+        width: 92vw;
+        margin: 10vh auto 4vh auto;
+    }
+    main ul li {
+        width: 80vw;
+    }
+    main ul li a span{
+        font-family: "Poetsen One", cursive;
+        margin-right: 7vw;
+        float: right;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #btn {
+        right: 5vw;
+    }
+    .toggle div #sessao {
+        width: 260px;
+        height: 160px;
+        margin-right: 5vw;
+    }
+    .menu .descricao {
+        overflow-wrap: break-word;
+        margin: 0 3vw;
+    }
+    main {
+        width: 92vw;
+        
+    }
+    main ul li {
+        width: 80vw;
+    }
+    main ul li a span{
+        font-family: "Poetsen One", cursive;
+        margin-right: 8vw;
+        float: right;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #btn {
+        right: 5vw;
+    }
+    .toggle div #sessao {
+        width: 260px;
+        height: 160px;
+        margin-right: 5vw;
+    }
+    .menu .descricao {
+        overflow-wrap: break-word;
+        margin: 0 3vw;
+        font-size: 27px;
+    }
+    main {
+        width: 80vw;
+    }
+    main ul li {
+        width: 65vw;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .menu .descricao {
+        margin: 0 3vw;
+        font-size: 33px;
+    }
+    main {
+        width: 80vw;
+    }
+    main ul li {
+        width: 60vw;
+    }
+}
