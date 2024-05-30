@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkTree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="toggle" onclick="toggleSidebar()">
+        <section id="btn">
+            <span></span>
+            <span></span>
+            <span></span>    
+            
+        </section>
+        <div id="section">
+            <div id="sessao">
+                <p class="tema">Define Your Theme:</p>
+                <div class="buttons">
+                    <button onclick="CorPrincipal()"></button>
+                    <button onclick="CorSecundaria()"></button>
+                    <button onclick="CorTerceira()"></button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <section class="menu">
+        <img src="user.jpg" alt="usuario">
+        <h1 class="nome">Ana Oliveira</h1>
+        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Recusandae aspernatur aperiam odio maxime ipsa animi aut tempore illum ad consequuntur.</p>
+    </section>
+
+    <main>
+        <div class="plata">
+            <h1>Minhas Plataformas:</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bi bi-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bi bi-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bi bi-linkedin"></i>
+                    <span>Linkedln</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bi bi-envelope"></i>
+                    <span>Gmail</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bi bi-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
