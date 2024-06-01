@@ -20,10 +20,10 @@ body {
 
 .tema-site {
     width: 100vw;
-    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(151, 129, 146));
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(153, 129, 147));
     color: transparent;
     background-clip: text;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 }
 
 .tema-site h1{
@@ -275,14 +275,13 @@ main ul li a span{
     font-weight: bold;
     color: var(--cor2);
     font-family: "Poetsen One", cursive;
-
 }
 
 
 @media (max-width: 480px){
     .tema-site h1 {
         font-size: 35px;
-        margin: 3vh 0;
+        margin: 2vh 0;
     }
     #btn {
         right: 3vw;
@@ -302,6 +301,9 @@ main ul li a span{
         width: 260px;
         height: 160px;
         margin-right: 5vw;
+    }
+    .menu .texts .nome {
+        font-size: 49px;
     }
     .menu .texts .descricao {
         overflow-wrap: break-word;
@@ -325,7 +327,6 @@ main ul li a span{
 @media (min-width: 481px) and (max-width: 768px) {
     .tema-site h1 {
         font-size: 50px;
-        margin: 2vh 0;
     }
     #btn {
         right: 5vw;
@@ -403,7 +404,7 @@ main ul li a span{
     .menu .texts .descricao {
         overflow-wrap: break-word;
         margin: 0 3vw;
-        font-size: 24px;
+        font-size: 22px;
     }
     main {
         width: 85vw;
@@ -445,8 +446,8 @@ main ul li a span{
         margin-top: 1vh;
     }   
     .menu .img img {
-        width: 85%;
-        height: 85%;
+        width: 88%;
+        height: 90%;
         margin-left: 3vw;
     }
     .menu .texts {
