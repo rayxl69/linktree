@@ -262,7 +262,8 @@ main ul li a span{
 
 .meu_insta {
     padding: 3vh 3vw;
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .meu_insta .insta {
@@ -270,7 +271,6 @@ main ul li a span{
 }
 
 .meu_insta .insta p {
-    text-align: center;
     font-size: 35px;
     font-weight: bold;
     color: var(--cor2);
