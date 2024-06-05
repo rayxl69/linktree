@@ -240,6 +240,8 @@ main ul li {
 
 main ul li a {
     text-decoration: none;
+    height: 100%;
+    width: 100%;
 }
 
 main ul li a *{
@@ -250,22 +252,22 @@ main ul li a *{
 main ul li a i{
     /* margin-left: 13vw; */
     font-size: 25px;
-    float: left; 
-    /*position: absolute;
+    /*float: left; */
+    position: absolute;
     top: 50%;
     left: 25%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
 }
 
 main ul li a span{
     font-family: "Poetsen One", cursive;
     font-size: 28px;
     /* margin-right: 13vw; */
-    float: right; 
-    /*position: absolute;
+    /*float: right; */
+    position: absolute;
     top: 50%;
     right: 25%;
-    transform: translateY(-50%);*/
+    transform: translateY(-50%);
 }
 
 .meu_insta {
