@@ -239,6 +239,7 @@ main ul li {
 }
 
 main ul li a {
+    display: block;
     text-decoration: none;
     min-width: 60vw;
     height: 80px;
